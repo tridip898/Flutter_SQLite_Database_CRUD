@@ -138,6 +138,9 @@ class _HomePageState extends State<HomePage> {
           child: ListView.separated(itemBuilder: (_,index){
             return Card(
               color: Colors.purpleAccent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20)
+              ),
               child: ListTile(
                 title: Text(_journal[index]['title'],style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w600,color: Colors.white),),
                 subtitle: Text(_journal[index]['description'],style: TextStyle(fontSize: 13.sp,color: Colors.grey.shade200),),
